@@ -1,0 +1,6 @@
+### transcripts expression abundance counts
+cuffquant -o outpit_dir -p 64 -b reference_genome.fa -u reference.gff samplename_sort.bam
+
+### cuffnorm merge cuffquant results
+cuffnorm -L sample1,sample2,sample3,...,sample -p 64 -o output_dir reference.gff sample1.cxb sample2.cxb sample3.cxb.... &
+
